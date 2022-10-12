@@ -1,38 +1,217 @@
-.App {
+
+.card-body {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  width: 250px;
+  height: 330px;
+  margin: 10px
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+}
+
+.filter-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  width: 280px;
+  height: auto;
+  padding: 20px;
+  margin-bottom: auto;
+  margin-top: 7px;
+}
+
+.filter-year-btn {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.filter-btn {
+  background-color: #c6eb8c;
+  border: none;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.filter-btn:hover {
+  background-color: #f12727;
+}
+
+.filter-btn:focus {
+  background-color: #f12727;
+}
+
+.year-btn {
+  background-color: #c6eb8c;
+  border: none;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.year-btn:hover {
+  background-color: #f12727;
+}
+
+.filter-heading {
+  text-align: left;
+  text-transform: capitalize;
+  font-family: 'Franklin Gothic Medium';
+  font-weight: 600;
+}
+
+.text {
+  font-family: Trebuchet MS;
+  font-weight: 500;
+}
+
+.btn-text {
+  font-weight: 500;
+}
+
+.image {
+  margin-top: 10px;
+  margin-left: 38px;
+}
+
+.mission-name {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: rgb(80, 80, 244);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.output-data {
+  text-align: left;
+  margin-left: 20px;
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.heading {
+  margin-top: 25px;
+  font-family: Arial narrow;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.No-data {
   text-align: center;
+  margin-top: 69%;
+  margin-left: 198px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100vw;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .main-container {
+    display: grid;
+    grid-template-columns: auto;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
   }
+
+  .No-data {
+    text-align: center;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .heading {
+    margin-top: 25px;
+    font-family: Arial narrow;
+    font-size: large;
+    font-weight: 700;
+  }
+  
 }
+
+@media screen and (min-width: 700px) and (max-width:1024px) {
+  .container {
+    width: 100vw;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: auto auto;
+ 
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 30px;
+  
+  }
+
+  .No-data {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .filter-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    width: 280px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: auto;
+    margin-top: 7px;
+  }
+
+  .card-container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    width: 200px;
+    height: 330px;
+  }
+  
+} 
+
+
+@media screen and (min-width: 1024px) and (max-width:1440px) {
+  .container {
+    width: 100vw;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 30px;
+  }
+
+  .No-data{
+   text-align: center;
+   padding-bottom: 10px;
+   padding-top: 10px;
+ } 
+} 
